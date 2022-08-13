@@ -15,6 +15,25 @@
 .carousel-item{
     transition: transform 1s ease, opacity .5s ease-out;
 }
+
+#carousel{
+    position: relative;
+}
+
+#carousel .overlay{
+    position: absolute; /*el overlay se expanda por todo lo alto del carrusel y ancho*/
+    top:0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.5);
+    color: white; 
+}
+
+#carousel .overlay .container,
+#carousel .overlay .row{
+    height: 100%;
+}
 /* footer */
 #footer{
     background: linear-gradient(90deg, #1c3643, #273b47 25%, #1e5372);
