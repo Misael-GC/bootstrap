@@ -34,6 +34,15 @@
 #carousel .overlay .row{
     height: 100%;
 }
+/* button */
+.btn-platzi{
+    background: #97c93e;
+    color: white;
+}
+
+.btn-platzi:hover{
+    background-color: #82ad36;
+}
 /* footer */
 #footer{
     background: linear-gradient(90deg, #1c3643, #273b47 25%, #1e5372);
