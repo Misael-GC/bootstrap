@@ -12,9 +12,9 @@
     <link rel="stylesheet" href="style.css" />
     <title>PlatziConf Hawaii</title>
   </head>
-  <body>
+  <body data-bs-spy="scroll" data-bs-target="#navbar" data-bs-offset="56">
     <!-- Header -->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-md-top">
       <div class="container">
         <a class="navbar-brand" href="#">
           <img src="./assets/images/platzi-logo.png" alt="logo Platzi" /> Conf
@@ -24,28 +24,28 @@
           class="navbar-toggler"
           type="button"
           data-bs-toggle="collapse"
-          data-bs-target="#navbarSupportedContent"
-          aria-controls="navbarSupportedContent"
+          data-bs-target="#navbar"
+          aria-controls="navbar"
           aria-expanded="false"
           aria-label="Toggle navigation"
+          data-target="#navbar"
         >
           <span class="navbar-toggler-icon"></span>
         </button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <div class="collapse navbar-collapse" id="navbar">
           <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#"
-                >La conferencia</a
-              >
+              <a class="nav-link" aria-current="page" href="#main"
+                >La conferencia</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Los oradores</a>
+              <a class="nav-link" href="#speakers">Los oradores</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Lugar y fecha</a>
+              <a class="nav-link" href="#place-time">Lugar y fecha</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Conviertete en orador</a>
+              <a class="nav-link" href="#conviertete-en-orador">Conviertete en orador</a>
             </li>
             <li class="nav-item">
               <a class="nav-link text-platzi" href="#">Comprar tickets </a>
@@ -56,7 +56,7 @@
     </nav>
     <!-- /Header -->
     <!-- Main -->
-    <main class="main">
+    <main class="main" id="main">
       <div
         id="carousel"
         class="carousel slide"
