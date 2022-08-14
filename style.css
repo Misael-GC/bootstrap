@@ -68,6 +68,11 @@
     color: white;
 }
 
+/* TOOLTIP */
+ .abbr {
+    color: #82ad36;
+    text-decoration: none;
+}
 
 /* footer */
 #footer{
